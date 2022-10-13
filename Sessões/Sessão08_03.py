@@ -38,4 +38,4 @@ def fora():
     
     return dentro()
 
-print(exponencial(3))
+print(fora().__doc__)
