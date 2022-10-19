@@ -17,7 +17,7 @@ def dividir(a, b):
         return 'Não podemos dividir por 0'
 
     
-# Forma mais profissional de debuggar  
+# Forma mais profissional de debuggar: 
 nome = 'Vitor'
 sobrenome = 'Kruel'
 breakpoint()
