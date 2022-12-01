@@ -1,0 +1,18 @@
+== Curso Python =========================================================
+
+			Expressões Lambdas e Funções integradas
+
+=========================================================================
+O que são expressões Lambdas - São funções sem nome, são funções Anônimas
+
+ 
+=========================================================================
+
+Sintaxe: 
+	Ex:. 
+		calculo = lambda x: 3 * x + 1
+
+-> Podemos ter múltilplas entradas
+	Ex:. 
+		lambda nome, sobrenome: nome.strip().title() + ' ' + sobrenome.strip().title()
+

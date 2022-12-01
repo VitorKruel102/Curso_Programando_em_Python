@@ -1,0 +1,15 @@
+== Curso Python =========================================================
+
+					Funções - Zip
+
+=========================================================================
+O que é Zip - Cria um iteravel como (zip Object), passando como pares,
+		  ou seja, pega o primeiro elemento de cada e cria um par.
+
+SINTAXE:
+	EX:. 	
+		lista1 = [1, 2, 3]
+		lista2 = [4, 5, 6]
+
+		zip1 = zip(lista1, lista2)
+		

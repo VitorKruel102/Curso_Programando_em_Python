@@ -1,0 +1,178 @@
+== Curso Python =========================================================
+
+							Class em Python
+
+=========================================================================
+
+Método de Instancia = Porque precisamos de uma instancia do objeto para
+					  fazer acesso a ele.
+
+Método de Classe = Esta vinculada diretamente com a class, utilizamos um decoretor
+				   para identificar que é de classe e não de instancia.
+
+class Produto: 
+	contador = 0
+
+	@classmethod
+	def cadastro_produto(cls): # Método de classe (cls = Class atual)
+		print(f'Temos {cls.contador} produto no sistema')
+
+	def __init__(self, nome, valor):  # Método Construtor
+		self.__id = Produto.contador + 1
+		self.nome = nome   # Variavel Publica
+		self.__valor = valor # Variavel Privada
+		Produto.contador = self.__id
+	
+	def desconto(self, porcentagem): # Método de Instancia
+		"""Retorna o valor do produto com desconto."
+		return (self.__valor * (100 - porcentagem)) / 100
+
+p1 = Produto()  # Instancia do Objeto.
+p1.desconto(20)
+
+=========================================================================
+
+				classe
+			--------------
+			/ Atribnutos /
+			/	  e		 /  ---------> Encapsulamento
+			/   metodos	 /
+			--------------
+
+=========================================================================
+
+Herança:  Reaproveitamento de código e tambem extender nossas clases
+
+class Pessoa: # Super Class
+	def __init__(self, nome, sobrenome, cpf):
+		self.__nome = nome
+		self.__sobrenome = sobrenome
+		self.__cpf = cpf
+
+	def nome_completo(self):
+		return f'{self.__nome} {self.__sobrenome}'
+
+
+class Usuario(Pessoa):  # Usuario recebe a herança da class Pessoa
+	def __init__(self, nome, sobrenome, cpf, renda):
+		super().__init__(nome, sobrenome, cpf)
+		self.__renda = renda
+
+
+class Funcionario(Pessoa):
+	def __init__(self, nome, sobrenome, cpf, matricula):
+		super().__init__(nome, sobrenome, cpf)
+		self.__matricula = matricula
+	
+=========================================================================
+
+Propriedades : 
+
+class Conta:
+    contador = 0    ----> Atrinuto de classee
+
+    def __init__(self, titular, saldo, limite): ----> Métodos contrutores
+        self.__numero = Conta.contador + 1
+        self.__titular = titular
+        self.__saldo = saldo
+        Conta.contador += 1
+
+	@property 			----> Propriedades
+    def numero(self):
+        return self.__numero
+
+	@property
+	def titular(self):
+		return self.__titular
+
+	@property
+	def saldo(self):
+		return self.__saldo
+
+	@property
+	def limite(self):
+		return self.__limite
+
+ 	@limite.setter
+	def limite(self, novo_limite):
+		self.__limite = novo_limite
+
+    def extrato(self):   ----> Métodos de instancia
+        return f'Saldo de {self.__saldo} do cliente {self.__titular}'
+    
+	def depositar(self, valor):
+        self.__saldo += valor
+
+    def sacar(self, valor):
+        self.__saldo -= valor
+
+    def transferir(self, valor, destino):
+        self.__saldo -= valor
+        destino.__saldo += valor
+
+
+conta_1 = Conta('Vitor', 4000, 5000)
+limite = conta_1.limite ----> Propriedade
+conta_1.limite = 10000
+
+=========================================================================
+
+Herança Multiplas - Possibilidade de uma classe herde multiplas classes,
+					ela pode ser feite de duas maneiras:
+
+					- Multiderivação Direta;
+					- Multiderivação Indireta;
+
+
+--> Multiderivação Direta:
+
+class Base1:
+   	pass
+
+class Base2:
+   	pass
+
+class MultiDerivada(Base1, Base2):
+   	pass
+
+--> Multiderivação Indireta:
+
+class Base1:
+   	pass
+
+class Base2(Base1):
+   	pass
+
+class MultiDerivada(Base2):
+   	pass
+
+=========================================================================
+
+Métodos mágicos - São todos os métodos que utilizam dunder.
+
+Ex:. __init__(), __repr__(), __str__(), __len__(), __del__, __add__, __mul__
+
+class Livro:
+
+	def __init__(self, titulo, autor, paginas):
+		self.titulo =titulo
+		self.autor = autor
+		self.paginas = paginas
+
+	def __repr__(self): # Faz a representação do objeto
+		return self.titulo
+
+	def __str__(self): # Representão ao Usuario Final (Tem preferência)
+		return self.titulo
+	
+	def __len__(self):
+		return self.paginas
+	
+	def __del__(sef):
+		return 'O objeto foi deletado da memória'
+
+	def __add__(self, outro):
+		return f'{self} - {outro}'
+		
+	def __mul__(self, outro):
+		return f'{self} - {outro}'

@@ -1,0 +1,27 @@
+== Curso Python =========================================================
+
+					Funções - Any e All
+
+=========================================================================
+O que é All- Retorna True se todos os elementos do iterável são verdadeiros
+		 ou ainda se o iterável está vazio.
+
+SINTAXE:
+	EX:. 	
+		all([]) # True
+		all([1, 2, 3]) # True
+ 		all([0, 1, 2, 3]) # False
+		
+
+=========================================================================
+O que é Any- Retorna True se qualquer elemento do iterável for verdadeiro
+		 Se estiver vazio, retorna falso.
+
+
+SINTAXE:
+	EX:. 	
+		any([]) # False
+		any([0]) # False
+		any([1, 2, 3]) # True
+ 		any([0, 1, 2, 3]) # True
+		

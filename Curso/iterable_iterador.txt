@@ -1,0 +1,27 @@
+== Curso Python =========================================================
+
+							Iterator e Iterable
+
+=========================================================================
+
+-- > Iteradores : Objeto que pode ser iterado, retorna um dado quando 
+				  chamado a função next()
+
+-- > Iterable : Objeto que irá retornar um iterador quando chamado a 
+				função iter()
+					
+=========================================================================
+
+Iterable:	(Pode ser alterado e modificado)
+	nome = 'Geek'
+	numero = [0, 1, 2, 3, 4]
+
+Tranformando um Iterable in Iterador:
+
+	nome = iter(nome)
+	print(next(nome)) #G
+	print(next(nome)) #e
+	print(next(nome)) #e
+	print(next(nome)) #k
+
+

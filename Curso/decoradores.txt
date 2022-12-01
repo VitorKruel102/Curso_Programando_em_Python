@@ -1,0 +1,55 @@
+== Curso Python =========================================================
+
+							Decoradores
+
+=========================================================================
+
+--> Funções de maior grandeza : Funções que retornam outras funções
+
+Exemplo:
+
+	def soma(a, b):
+		return a + b
+
+	def calcular(a, b, funcao): # Função de Maior Grandeza
+		return funcao(a,b)
+
+
+--> Funções Aninhadas: 
+		from random import choice
+
+		def cumprimento(pessoa):
+			def humor():
+				return choice(('E ai', 'Suma daqui', 'Gosto muito de você'))
+			return humor() + pessoa
+			 
+=========================================================================
+
+Decoradores --> São funções;
+				Envolvem outras funções e aprimoram seus comprtamentos;
+				São Funções de ordem superior
+				Decoradores tem uma sintaxe propria, "@"
+
+
+Exemplo Decoradores:
+
+		def seja_educado(funcao):
+			def sendo():
+				print('Foi um prazer conhecer você')
+				funcao()
+				print('Tenha um ótimo dia!')
+			return sendo
+
+Utilizando:
+
+		@seja_educado
+		def saudacao():
+			print('Seja Ben-vindo!')
+
+Resultado:
+
+	Foi um prazer conhecer você
+	Seja Ben-vindo!	
+	Tenha um ótimo dia!
+
+=========================================================================

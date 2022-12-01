@@ -1,0 +1,28 @@
+== Curso Python =========================================================
+
+				List Comprehension
+
+=========================================================================
+O que é Lista Comprehension - Podemos gerar novas listas a partir de outro
+					interável.
+
+=========================================================================
+Sintaxe:
+	Ex:. 
+		[dado for dado in interavel]
+
+
+=========================================================================
+Podemos adicionar estruturas condicionais lógicas:
+
+	Ex:. 
+		[dado for dado in interavel if dado > 0]
+
+== Curso Python =========================================================
+
+				Dictionary Comprehension
+
+=========================================================================
+Sintaxe:
+	Ex:. 
+		{chave:valor for valor in interavel}

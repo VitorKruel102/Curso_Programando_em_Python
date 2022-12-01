@@ -1,0 +1,38 @@
+== Curso Python =========================================================
+
+			Funções - *ARGS
+
+=========================================================================
+O que é args - É *args é um parametro como qualquer outro, podemos chamar 
+		   de qualquer coisa, desde que comece por asterisco.
+
+		   Por convenção, a comunidade adotou o nome *args como padrão.
+
+=========================================================================
+Funcionalidade: O parametro utilizado em uma função, coloca os valores 
+		    em uma Tupla.
+
+
+ - Para utilizar uma lista dentro do args, precisamos colocar no argumento
+   da função o nome da lista com um asterisco no inicio. 
+
+	Exempo:. soma_dados(*lista) # Descompactamento
+
+
+== Curso Python =========================================================
+
+		  Funções - **KWARGS
+
+=========================================================================
+
+Funcionalidade: Diferente do anterior, ele exige que utilizemos parâmetros
+		    nomeados, e transforma esses pârametros em um dicionario.
+
+
+ - Para utilizar uma dicionario dentro do KWARGS, precisamos colocar no argumento
+   da função o nome do dicionario com um asterisco no inicio. 
+
+	Exempo:. soma_dados(**dicionario) # Descompactamento
+
+
+

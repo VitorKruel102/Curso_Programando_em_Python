@@ -1,0 +1,100 @@
+== Curso Python =====================================================================
+
+						Debug
+
+=====================================================================================
+
+Erros comuns:
+	
+	SyntaxError      : Quando existe um erro de Sintaxe;
+	NameError        : Quando uma variável ou def não está definida;
+	TypeError        : Quando aplicamos uma função/operação em um tipo erro;
+	IndexError       : Quando o index é invalido;
+	ValuerError      : Quando uma função recebe um valor inapropriado; int('Geek')
+	KeyError         : Quando não existe o nome da chave no dicionario;
+	AttributeError   : Quando uma variável não pode realizar um atributo/função;
+	IndenrarionError : Quando não respeitamos os espaços necessarios em python;
+	
+
+=====================================================================================
+	
+Raise --> Lança exceções, não é uma função, é apenas uma palavra reservada.
+
+Sintaxe: 
+	EX:.
+		raise TipoDoErro("Mensagem sobre o erro")
+
+
+=====================================================================================
+
+Try/except --> Utilizado para tratar error, previnindo que o programa pare de funcionar
+
+try:
+	execução problematica.
+except:
+	O que deve ser feito se ocorrer.
+	
+	
+try:
+	execução problematica.
+except ValuerError as Erro_valor:
+	O que deve ser feito se ocorrer.	
+
+=====================================================================================
+
+--> Try, Except, Else e Finally:
+
+	Dica onde precisamos tratar o código:
+
+		--> Toda a entrada deve ser tratada!
+
+try:
+	execução problematica.
+except:
+	O que deve ser feito se ocorrer.
+else:
+	Executa se não tiver erro.
+finally:
+	É sempre executado se tiver erro ou não
+
+	
+
+Finally --> Utilizado para fechar ou desalocar recurso (Fechar o banco de dados)
+
+=====================================================================================
+
+PDB --> Python Debugger (Forma mais profissional de debuggar)
+
+Comando basicos do PDB:
+
+	L = Listar onde estamos no código
+	N = Proxima linha
+	p = Imprime variavel
+	C = Continua execução
+
+Sintaxe:
+	EX:.
+		breakpoint()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

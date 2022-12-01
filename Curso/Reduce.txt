@@ -1,0 +1,26 @@
+== Curso Python =========================================================
+
+					Funções - Reduce
+
+=========================================================================
+O que é Reduce- A partir Python 3+ não é mais uma função integrada,
+		    agora precisamos import a função pelo módulo 'funftools'.
+	
+
+Só utilize se realmente precisa, caso contrario use for.
+
+SINTAXE:
+	EX:. 
+		-> Recebe dois parametros:
+			
+		reduce(funcao, dados)
+
+ATRAS DO CAPÔ:
+	dados = [a1, a2, a3, ..., an]
+	Passo 01: resposta01 = f(a1, a2)
+	Passo 02: resposta02 = f(resposta01, a3)
+	Passo 03: resposta03 = f(resposta02, a4)
+
+	Até o passo aN
+
+

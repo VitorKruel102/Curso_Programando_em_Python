@@ -1,0 +1,48 @@
+== Curso Python =========================================================
+
+					Random
+
+=========================================================================
+O que são módulos --> São arquivos em Python criados por outros usuários
+
+
+
+ --> Random: Funções para gerar números pseudo-aleatório
+
+	import random
+	from random import random  # Recomendado
+
+	
+	random()  - Retorna um número entre [0, 1]
+	uniform() - Gera números pseudo-aleatório entre dois valores.
+	randint() - Gera números pseudo-aleatório entre dois valores inteiros.
+	choice()  - Mostra um número aleatório em um iterável.
+	shuffle() - Embaralhar cartas;
+
+
+			EX:.
+				uniforme(3, 7) # Valores entre [3, 6.99]
+				
+				numeros = [1, 2, 3, 4, 5]
+				shuffle(numeros)
+				
+				print(numeros) # [3, 4, 1, 2, 5]
+	
+	
+=========================================================================
+
+
+				Dunder Main e Dunder Name
+
+========================================================================	
+
+
+Dunder = Doble Under ( __main__ , __name__ )
+
+Para o que serve: Em python, são utilizados os dunder para criar funções 
+			para não criar conflitos com nomes desses elementos na 
+			programação.
+
+if __name__ == '__main__':
+	(O que deve ser executado)
+	

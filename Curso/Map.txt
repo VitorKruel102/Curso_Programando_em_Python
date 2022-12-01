@@ -1,0 +1,11 @@
+== Curso Python =========================================================
+
+					Funções - Map
+
+=========================================================================
+O que é Map - Fazemos mapeamento para função.
+
+
+SINTAXE:
+	EX:. 
+		list(map(funcao, interavel))

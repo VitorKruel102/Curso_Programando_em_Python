@@ -1,0 +1,31 @@
+== Curso Python =========================================================
+
+							Geradores
+
+=========================================================================
+
+-- > Geradores : São Iteradores;
+				 Podem ser criados com funções geradoras;
+				 Funções geradoras utilizam a palavra reserva yield;
+
+=========================================================================
+
+Diferença entre funções e Funções geradoras:
+
+Função -> Utilizam Return;
+		  Retorna uma vez;
+
+Função Geradoras -> Utilizam yield;
+					Pode utilizar o yield multiplas vezes;
+					Retorna um Generator;
+
+=========================================================================
+
+# Exemplo função geradora:
+
+def contador(valor_maximo):
+	"""."""
+	contador = 1
+	while contador <= valor_maximo:
+		yield contador    # Guarda o valor até ser chamado novamente.
+		contador += 1

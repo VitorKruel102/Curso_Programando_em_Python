@@ -1,0 +1,12 @@
+== Curso Python =========================================================
+
+					Funções - Filter
+
+=========================================================================
+O que é Filter - Serve para filtrar dados de um coleção
+
+
+SINTAXE:
+	EX:. 
+		list(filter(funcao, interavel))
+

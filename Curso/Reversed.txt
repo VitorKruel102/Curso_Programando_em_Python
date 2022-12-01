@@ -1,0 +1,17 @@
+== Curso Python =========================================================
+
+					Funções - reversed
+
+=========================================================================
+O que é reversed - Ele é diferente da função reverse() utilizado em listas,
+ 		     a função reversed() retorna uma nova lista de tras para frente
+		     em qualquer dado iteravel, preservando a original. 
+		     Retorna sempre uma list_reverseiterator.
+
+SINTAXE:
+	EX:. 	
+		list_numeros = [6, 1, 8, 2]
+		set_numeros = {6, 1, 8, 2}
+
+		print(list(reversed(list_numeros)))
+		print(tuple(reversed(set_numeros)))
